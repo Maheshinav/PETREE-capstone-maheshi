@@ -1,0 +1,73 @@
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Regular.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Thin.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Light.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Medium.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+@font-face{
+    src:url("../../assets/fonts/NotoSans-SemiBold.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Bold.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+@font-face{
+    src:url("../../assets/fonts/NotoSans-Black.ttf");
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+@mixin fontRegular{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin fontThin{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+@mixin fontLight{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+@mixin fontMedium{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+@mixin fontSemiBold{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+@mixin fontBold{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+@mixin fontBlack{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 900;
+}
