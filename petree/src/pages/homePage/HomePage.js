@@ -5,6 +5,7 @@ import Comments from "../../component/comments/Comments";
 import Gallery from "../../component/gallery/Gallery";
 //import Products from "../../components/products/Products";
 import "./homePage.css";
+import Aboutus from"../aboutuspage/Aboutuspage";
 
 const Homepage = () => {
   return (
@@ -22,6 +23,7 @@ const Homepage = () => {
         <Featuredpots />
         <Comments /> 
         <Gallery />
+        <Aboutus/>
         {/* <Products /> */}
       </div>
     </div>
