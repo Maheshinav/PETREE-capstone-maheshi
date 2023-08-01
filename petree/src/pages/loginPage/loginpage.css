@@ -1,0 +1,27 @@
+.login__image {
+  margin-top: 3rem;
+}
+.login__header {
+  color: #3E5700;
+}
+.login__button {
+  background-color: #E1EDC2 !important;
+}
+.login__input-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.login__forgot {
+  color: #3E5700;
+}
+.login__register {
+  color: #3E5700 !important;
+}
+.login__not-member {
+  color: #3E5700;
+  display: flex;
+}
+.login__input-text {
+  color: #7E9D25;
+  border-color: #3E5700;
+}/*# sourceMappingURL=loginpage.css.map */

@@ -1,0 +1,39 @@
+
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.contact{
+    &__measurement{
+        height:100%;
+        padding: 5rem;
+    }
+
+    &__sub-text{
+        color:$grass-green;
+    }
+
+    &__paragraph{
+        @include fontRegular;
+        font-size: 1rem;
+        color:$deep-green;
+
+    }
+}
+
+
+
+.page-title{
+    @include fontBold;
+    padding:2rem;
+    color:$olive-green;
+    font-size: 2rem;
+}

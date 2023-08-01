@@ -1,0 +1,27 @@
+.register__image {
+  margin-top: 2rem;
+}
+.register__header {
+  color: #3E5700;
+}
+.register__button {
+  background-color: #E1EDC2 !important;
+}
+.register__input-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.register__forgot {
+  color: #3E5700;
+}
+.register__register {
+  color: #3E5700 !important;
+}
+.register__not-member {
+  color: #3E5700;
+  display: flex;
+}
+.register__text {
+  border-color: #3E5700;
+  color: #7E9D25;
+}/*# sourceMappingURL=registerPage.css.map */

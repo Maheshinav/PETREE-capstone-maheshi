@@ -1,0 +1,78 @@
+@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Thin.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Medium.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-SemiBold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Bold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Black.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+.subscription__heading {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #608653;
+}
+.subscription__page-heading {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #3E5700;
+}
+.subscription__header {
+  background-color: #FFFFFF;
+}
+.subscription__price {
+  color: #608653;
+}
+.subscription__button-text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #E1EDC2 !important;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+.subscription__button-color {
+  background-color: #7E9D25 !important;
+}
+
+.pricing-list {
+  text-align: left;
+  padding-left: 20px;
+}
+.pricing-list li {
+  margin-bottom: 1rem;
+}
+
+.subscription__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=Subscriptionpage.css.map */

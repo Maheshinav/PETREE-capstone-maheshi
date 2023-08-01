@@ -1,0 +1,38 @@
+@use '../../styles/partials/colors' as *;
+
+.register {
+    &__image {
+        margin-top: 2rem;
+    }
+
+    &__header {
+        color: $olive-green;
+    }
+
+    &__button {
+        background-color: $pale-green !important;
+    }
+
+    &__input-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__forgot {
+        color: $olive-green;
+    }
+    &__register{
+        color: $olive-green !important; 
+    }
+    &__not-member{
+        color: $olive-green;
+        display: flex;
+    }
+    &__text{
+        border-color: $olive-green;
+        color: $grass-green;
+    }
+   
+    
+
+}

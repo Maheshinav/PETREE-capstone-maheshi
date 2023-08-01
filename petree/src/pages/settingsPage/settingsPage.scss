@@ -1,0 +1,25 @@
+@use '../../styles/partials/colors' as *;
+
+.settings{
+    &__main{
+        margin-top: 1rem;
+    }
+    &__propic{
+        margin-right: 1rem;
+    }
+    &__divider{
+        color: $grass-green !important ;
+        height: 1px;
+    }
+    &__button {
+        background-color: $pale-green !important;
+    }
+
+    &__input-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__color{
+        color:$olive-green ;
+    }
+}

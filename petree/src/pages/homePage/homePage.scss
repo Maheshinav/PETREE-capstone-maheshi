@@ -1,0 +1,45 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+    position: relative;
+	background-image: url("../../assets/images/landing\ page.jpeg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
+}
+
+
+@keyframes shine {
+	0% {
+		background-position: 0;
+	}
+	60% {
+		background-position: 600px;
+	}
+	100% {
+		background-position: 600px;
+	}
+}
+
+.custom-text {
+    position: absolute;
+	background: linear-gradient(
+		to right,
+		hsl(0, 0%, 30%) 0,
+		hsl(0, 0%, 100%) 10%,
+		hsl(0, 0%, 30%) 20%
+	);
+	background-clip: text;
+	color: transparent;
+	animation: shine 5s infinite linear;
+    
+}

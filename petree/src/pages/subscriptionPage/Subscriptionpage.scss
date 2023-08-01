@@ -1,0 +1,58 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
+
+.subscription{
+    &__heading{
+        @include fontSemiBold;
+        font-size: 2.2rem;
+        color:$text-green;
+
+    }
+    &__page-heading{
+        @include fontMedium;
+        font-size: 2.3rem;
+        color:$olive-green;
+    }
+
+    &__header{
+        background-color: $white;
+    }
+
+    &__price{
+        color:$text-green;
+    }
+
+    &__button-text{
+        @include fontRegular;
+        color: $pale-green !important;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+    }
+    &__button-color{
+        background-color: $grass-green !important;
+    }
+
+    
+}
+.pricing-list {
+    text-align: left;
+    padding-left: 20px;
+  
+    li {
+      margin-bottom: 1rem;
+    }
+  
+  }
+  
+  
+  .subscription__card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  
+  

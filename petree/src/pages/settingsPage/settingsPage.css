@@ -1,0 +1,20 @@
+.settings__main {
+  margin-top: 1rem;
+}
+.settings__propic {
+  margin-right: 1rem;
+}
+.settings__divider {
+  color: #7E9D25 !important;
+  height: 1px;
+}
+.settings__button {
+  background-color: #E1EDC2 !important;
+}
+.settings__input-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.settings__color {
+  color: #3E5700;
+}/*# sourceMappingURL=settingsPage.css.map */
