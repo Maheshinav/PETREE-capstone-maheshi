@@ -1,0 +1,110 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/breakpoints' as *;
+
+.nav{
+    &__logo{
+        height: 100px;
+        width: auto;
+    padding: 0;
+    }
+    &__navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &__search-icon{
+        height: 100%;
+        border: 1px solid $olive-green;
+        border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color:transparent;
+    }
+    &__input{
+        
+        border: 1px solid $olive-green;
+        border-left: transparent;
+    }
+    &_input-center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__cart-icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        cursor: pointer;
+      }
+      &__setcart{
+        width: 100%;
+        box-shadow: none !important;
+      }
+      &__cart-icon{
+        font-size: 2rem;
+      }
+      &__bg-color{
+        background-color: $pale-green;
+      }
+      &__list{
+        justify-content: space-between;
+        
+        width: 100%;
+        @include media-tablet{
+            align-items: center;
+        }
+      }
+      &__menu{
+        width: 90%;
+      }
+      &__icon{
+        height: 1rem;
+        margin-right: 0.4rem;
+        @include media-tablet{
+        } 
+      }
+      &__item{
+        height: 1rem;
+        margin-top: 1rem;
+        @include media-tablet{
+            margin: 0;
+        } 
+      }
+      &__item-list{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        @include media-tablet{
+            margin: 0;
+        } 
+      }
+      
+      &__avatar{
+        @include media-tablet{
+            margin: 0;
+        }
+      }
+      &__chevron-icon{
+        margin-left: 0.4rem;
+        @include media-tablet{
+            margin: 0;
+        }
+      }
+      &__drop-down{
+        background-color: $pale-green !important;
+      }
+      &__sub-menu{
+        margin-left: 0.4rem !important; 
+        display: flex;
+        align-items: center;
+      }
+      &__login{
+        text-decoration: none;
+        color: $olive-green;
+        margin-left: .4rem;
+      }
+      &__menu-item{
+        text-decoration: none;
+        color: $olive-green;
+      }
+}
+.fa-chevron-down{
+    color:$olive-green ;
+}

@@ -1,0 +1,42 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.comments{
+    &__card-border{
+        margin-bottom:1rem!important;
+        border-color:$white!important;
+}
+&__username{
+    @include fontMedium;
+    font-size: 0.8rem;
+    color:$deep-green; 
+    margin-left: 0.5rem;
+}
+
+&__date{
+    @include fontMedium;
+    font-size: 0.625rem;
+    color:$deep-green; 
+}
+
+&__description{
+    @include fontRegular;
+    font-size: 0.79rem;
+    color:$deep-green; 
+    
+}
+
+}
+.page-title{
+    @include fontBold;
+    padding:1rem;
+    color:$olive-green;
+    font-size: 1.7rem;
+}

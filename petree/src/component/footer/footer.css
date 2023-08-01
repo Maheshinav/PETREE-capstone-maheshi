@@ -1,0 +1,145 @@
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Thin.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Medium.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-SemiBold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Bold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Black.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__mobile {
+  display: flex;
+  justify-content: space-around;
+  --bs-gutter-y: 0;
+  --bs-gutter-x: 0;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.footer__social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.footer__text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #F4D50C;
+  text-align: center;
+}
+.footer__col6 {
+  width: 100%;
+}
+.footer__copyright-alignment {
+  padding-top: 0%;
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__list-display {
+  list-style: none;
+}
+.footer__copyright-text {
+  font-size: 0.8rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #F4D50C;
+  margin-top: 0.5rem;
+}
+.footer__background-color {
+  background-color: #708E1F;
+  height: 17rem;
+}
+.footer__footer-container {
+  padding-left: 0;
+  padding-right: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+@media (min-width: 768px) {
+  .footer__container-mb-only {
+    display: none;
+  }
+}
+.footer__items-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer__items-justify-tab {
+  padding-top: 6rem;
+}
+.footer__social-icons-tab {
+  display: flex;
+  justify-content: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-bottom: 0.5rem;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.footer__text-tab {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #F4D50C;
+  text-align: center;
+}
+.footer__copyright-text-tab {
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #F4D50C;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: block;
+  }
+}
+.hide-mobile {
+  display: none;
+}
+
+.second-footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  .second-footer {
+    display: block;
+  }
+}/*# sourceMappingURL=footer.css.map */

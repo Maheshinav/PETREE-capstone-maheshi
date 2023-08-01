@@ -1,0 +1,49 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+
+
+.item{
+    &__name{
+        text-align: center!important;
+    }
+
+
+    &__button-text{
+        @include fontBold;
+        color: $pale-green !important;
+        font-size: 0.25rem;
+        text-transform: lowercase;
+    }
+    &__button-color{
+        background-color: $grass-green !important;
+    }
+
+    &__card-sub{
+        @include fontMedium;
+        color:$deep-green!important;
+        font-size: 1rem;
+        
+    }
+    &__item__card-reg{
+        @include fontRegular;
+        color:$deep-green!important;
+        font-size: 0.7rem;
+    }
+}
+
+.custom-card-overlay h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .page-title{
+    @include fontBold;
+    padding:2rem;
+    color:$olive-green;
+    font-size: 2rem;
+}
+
