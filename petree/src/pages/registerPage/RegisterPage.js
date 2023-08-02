@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "./registerPage.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/unnamed.jpg";
 import MainImage from "../../assets/images/register.png";
 import { FloatingLabel, Form } from 'react-bootstrap';
 

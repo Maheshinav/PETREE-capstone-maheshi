@@ -5,7 +5,6 @@ import Comments from "../../component/comments/Comments";
 import Gallery from "../../component/gallery/Gallery";
 //import Products from "../../components/products/Products";
 import "./homePage.css";
-import Aboutus from"../aboutuspage/Aboutuspage";
 
 const Homepage = () => {
   return (
@@ -14,7 +13,7 @@ const Homepage = () => {
         <div style={{ overflow: "hidden" }}>
           <img className="hero w=100" src={Heroimage} alt="Hero" />
           <div>
-            {/*<h1 class="custom-text">Responsive left-aligned hero with image</h1>*/}
+            {/*<h1 className="custom-text">Responsive left-aligned hero with image</h1>*/}
           </div>
         </div>
       </div>
@@ -23,7 +22,6 @@ const Homepage = () => {
         <Featuredpots />
         <Comments /> 
         <Gallery />
-        <Aboutus/>
         {/* <Products /> */}
       </div>
     </div>

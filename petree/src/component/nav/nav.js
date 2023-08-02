@@ -5,7 +5,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { Link } from "react-router-dom";
 import "./nav.css";
 import ProPic from "../../assets/icons/Avatar.svg";
-import Avatar from "../../assets/icons/🦆 icon _info_.png";
+import Avatar from "../../assets/icons/🦆 icon _profile circle_.svg";
 import Pot from "../../assets/icons/🦆 icon _plant_.svg";
 import Subscription from "../../assets/icons/subscription plans.svg";
 import About from "../../assets/icons/🦆 icon _info_.png";

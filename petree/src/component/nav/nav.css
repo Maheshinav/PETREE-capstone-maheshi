@@ -1,22 +1,22 @@
 .nav__logo {
-  height: 100px;
+  height: 80px;
   width: auto;
   padding: 0;
 }
 .nav__navbar {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 .nav__search-icon {
   height: 100%;
   border: 1px solid #3E5700;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right-color: transparent;
+  border-right-color: transparent !important;
 }
 .nav__input {
   border: 1px solid #3E5700;
-  border-left: transparent;
+  border-left: transparent !important;
 }
 .nav_input-center {
   margin-left: auto;

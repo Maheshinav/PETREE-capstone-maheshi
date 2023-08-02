@@ -1,10 +1,8 @@
-
-
 import "./aboutuspage.css";
 
 const AboutUs = () => {
     return (
-      <div className="container mt-4 text-center">
+      <div className="container mt-4 text-center about-us-container">
         <h1 className="page-title">About us</h1>
         <h2 className="page-subtitle">Welcome to Petree – Where you meet your new Pet</h2>
         <p className="page-text">
@@ -17,7 +15,6 @@ const AboutUs = () => {
         </p>
       </div>
     )
-  }
-  
-  export default AboutUs;
-  
+}
+
+export default AboutUs;

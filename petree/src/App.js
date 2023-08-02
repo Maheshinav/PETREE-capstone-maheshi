@@ -10,7 +10,8 @@ import axios from "axios";
 import SettingsPage from "./pages/settingsPage/SettingsPage";
 import Footer from "./component/footer/Footer";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import SubscriptionPage from "./pages/subscriptionPage/Subscriptionpage"
+import SubscriptionPage from "./pages/subscriptionPage/Subscriptionpage";
+import RegisterPage from "./pages/registerPage/RegisterPage";
 
 function App() {
   // State to store the token and user_id
@@ -25,6 +26,7 @@ function App() {
   const handleLogout = () => {
     setAuthData({ token: "", user_id: null });
     localStorage.removeItem("token");
+    localStorage.removeItem("user_id");
   };
 
   const handleLogin = (token, user_id) => {
@@ -70,7 +72,7 @@ function App() {
   // empty dependency array to run only on component mount
 
   // Determine if the navigation bar should be displayed based on the route
-  const showNav = window.location.pathname !== "/login";
+  const showNav = !(window.location.pathname === "/login"||window.location.pathname === "/registerPage");
 
   return (
     <BrowserRouter>
@@ -98,6 +100,7 @@ function App() {
             element={<SettingsPage authData={authData} />}
           />
          <Route path="/subscriptionPage" element={<SubscriptionPage />} /> 
+         <Route path="/registerPage" element={<RegisterPage/>}/>
         </Routes>
         
         {showNav && <Footer />}
@@ -107,3 +110,8 @@ function App() {
 }
 
 export default App;
+
+ 
+ 
+ 
+ 

@@ -60,4 +60,11 @@
   font-weight: 400;
   font-size: 1rem;
   color: #192800;
+}
+
+.about-us-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=aboutuspage.css.map */

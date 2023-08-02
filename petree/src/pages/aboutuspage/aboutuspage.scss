@@ -29,3 +29,10 @@
     font-size: 1rem;
     color:$deep-green;
 }
+
+.about-us-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
