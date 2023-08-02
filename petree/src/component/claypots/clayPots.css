@@ -1,0 +1,27 @@
+.claypot__image {
+  height: 20rem;
+}
+@media (min-width: 768px) {
+  .claypot__image {
+    height: 13rem;
+  }
+}
+@media (min-width: 1280px) {
+  .claypot__image {
+    height: 15rem;
+  }
+}
+.claypot__button {
+  background-color: #3E5700;
+}
+.claypot__card {
+  height: 3rem;
+}
+.claypot__heading {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  color: #3E5700;
+}
+.claypot__heading-set {
+  margin-top: 1rem;
+}/*# sourceMappingURL=clayPots.css.map */

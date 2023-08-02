@@ -32,14 +32,14 @@ const LoginPage = ({handleLogin}) => {
       if (authData) {
         const { token, userId } = authData;
         console.log("User ID received after login:", userId);
-        // Pass the userId to the handleLogin function
+        
         handleLogin(token, userId);
   
-        // Store the token and userId for future authenticated requests
-        localStorage.setItem("token", token);
-        localStorage.setItem("user_id", userId); // storing user_id here
         
-        // Redirect to the home page after successful login
+        localStorage.setItem("token", token);
+        localStorage.setItem("user_id", userId); 
+        
+        
         window.location.href = '/';
       } else {
         alert("Invalid email or password. Please try again.");

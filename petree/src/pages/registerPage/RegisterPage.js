@@ -14,7 +14,7 @@ const RegisterPage = () => {
     user_name: '',
     password: '',
   });
-
+  const [redirectToLogin, setRedirectToLogin] = useState(false);
   // Function to handle form submission
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ const RegisterPage = () => {
 
       // Handle the response from the server if needed
       console.log(response.data);
-
+      setRedirectToLogin(true);
       // Optionally, you can redirect to a new page or display a success message
       // For example: history.push('/success');
     } catch (error) {
@@ -49,7 +49,10 @@ const RegisterPage = () => {
       [name]: value,
     }));
   };
-
+  if (redirectToLogin) {
+    // Redirect to the login page after successful registration
+    window.location.href = '/login';
+  }
   return (
     <div>
       <div className="container-fluid d-flex justify-content-center align-items-center">

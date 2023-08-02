@@ -84,4 +84,54 @@
   color: "#fff" !important;
   z-index: 2 !important;
   text-align: "center";
+}
+
+.bestsellingtrees__bgimage {
+  background-image: url("https://res.cloudinary.com/dchzjr4bz/image/upload/v1690964318/My_project_ivs8ho.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  color: #E1EDC2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .bestsellingtrees__bgimage {
+    height: 400px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .bestsellingtrees__bgimage {
+    height: 500px !important;
+  }
+}
+.bestsellingtrees__quote {
+  width: 40%;
+  font-weight: 900;
+  font-size: 1.8rem;
+  background-color: rgba(25, 40, 0, 0.8);
+  text-align: center;
+  border-radius: 4px;
+}
+@media (min-width: 1280px) {
+  .bestsellingtrees__quote {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .bestsellingtrees__quote {
+    padding: 0.4rem;
+  }
+}
+.bestsellingtrees__heading {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  color: #3E5700;
+}
+.bestsellingtrees__heading-set {
+  margin-top: 1rem;
 }/*# sourceMappingURL=bestsellingtrees.css.map */

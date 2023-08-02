@@ -12,6 +12,9 @@ import Footer from "./component/footer/Footer";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import SubscriptionPage from "./pages/subscriptionPage/Subscriptionpage";
 import RegisterPage from "./pages/registerPage/RegisterPage";
+import ProductsPage from "./pages/productspage/ProductsPage";
+import AboutUsPage from "./pages/aboutuspage/Aboutuspage";
+import ContactPage from "./pages/contactuspage/Contactuspage";
 
 function App() {
   // State to store the token and user_id
@@ -77,30 +80,18 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        {showNav && (
-          <Nav
-            token={authData.token}
-            handleLogout={handleLogout}
-            user_id={userId}
-          />
-        )}
+        {showNav && (<Nav token={authData.token} handleLogout={handleLogout} user_id={userId}/>)}
 
         {/* Pass the user_id prop to the Nav component */}
         <Routes>
-          {/* Pass the handleLogin function and authData to LoginPage */}
-          <Route
-            path="/login"
-            element={
-              <LoginPage handleLogin={handleLogin} authData={authData} />
-            }
-          />
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/settings/:user_id"
-            element={<SettingsPage authData={authData} />}
-          />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login"element={<LoginPage handleLogin={handleLogin} authData={authData} />}/>
+        <Route path="/settings/:user_id"element={<SettingsPage authData={authData} />}/>
          <Route path="/subscriptionPage" element={<SubscriptionPage />} /> 
          <Route path="/registerPage" element={<RegisterPage/>}/>
+         <Route path="/productsPage" element={<ProductsPage/>}/>
+         <Route path="/AboutusPage" element={<AboutUsPage/>}/>
+         <Route path="/ContactusPage" element={<ContactPage/>}/>
         </Routes>
         
         {showNav && <Footer />}
@@ -110,8 +101,3 @@ function App() {
 }
 
 export default App;
-
- 
- 
- 
- 

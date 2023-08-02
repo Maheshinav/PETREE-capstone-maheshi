@@ -162,28 +162,30 @@ const Nav = ({ handleLogout, user_id }) => {
                       
                     </li>
                   )}
+                  <Link to="/productsPage">
                   <li className="nav-item nav__item-list">
                     <img className="nav__icon" src={Pot} alt="Avatar" />
                     <span className="nav__menu-item">Trees & Pot</span>
                   </li>
+                  </Link>
                   <Link to="/subscriptionPage">
                   <li className="nav-item nav__item-list">
-                    <img
-                      className="nav__icon"
-                      src={Subscription}
-                      alt="Avatar"
-                    />
+                    <img className="nav__icon" src={Subscription} alt="Avatar"/>
                     <span className="nav__menu-item">Subscription Plans</span>
                   </li>
                   </Link>
-                  <li className="nav-item nav__item-list">
-                    <img className="nav__icon" src={About} alt="Avatar" />
-                    <span className="nav__menu-item">About US</span>
-                  </li>
-                  <li className="nav-item nav__item-list">
-                    <img className="nav__icon" src={Contact} alt="Avatar" />
-                    <span className="nav__menu-item">Contact</span>
-                  </li>
+                  <Link to="/AboutusPage">
+											<li className="nav-item nav__item-list">
+												<img className="nav__icon" src={About} alt="Avatar" />
+												<span className="nav__menu-item">About US</span>
+											</li>{" "}
+										</Link>
+										<Link to="/ContactusPage">
+											<li className="nav-item nav__item-list">
+												<img className="nav__icon" src={Contact} alt="Avatar" />
+												<span className="nav__menu-item">Contact</span>
+											</li>
+										</Link>
                 </ul>
               </div>
             </div>

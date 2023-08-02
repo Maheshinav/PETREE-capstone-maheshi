@@ -1,77 +1,34 @@
-@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Regular.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
+.bestsellingpots__image {
+  height: 20rem;
 }
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Thin.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 100;
+@media (min-width: 768px) {
+  .bestsellingpots__image {
+    height: 13rem;
+  }
 }
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 300;
+@media (min-width: 1280px) {
+  .bestsellingpots__image {
+    height: 15rem;
+  }
 }
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Medium.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 500;
+.bestsellingpots__button {
+  background-color: #3E5700;
 }
-@font-face {
-  src: url("../../assets/fonts/NotoSans-SemiBold.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
-}
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Bold.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-}
-@font-face {
-  src: url("../../assets/fonts/NotoSans-Black.ttf");
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 900;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.carousel__padding {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  height: auto;
-}
-.carousel__image {
-  padding-top: 1rem;
-}
-.carousel__card-title {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #192800;
-}
-.carousel__card-price {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #192800;
-}
-.carousel__card-border {
-  border: 1px solid #FFFFFF;
-  width: 18rem;
-}
-
-.page-title {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 500;
-  padding: 2rem;
-  color: #3E5700;
+.bestsellingpots__card {
+  height: 3rem;
   font-size: 2rem;
 }
-
-.card-body {
-  text-align: center;
+.bestsellingpots__heading {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  color: #3E5700;
+}
+.bestsellingpots__heading-set {
+  margin-top: 1rem;
+}
+.bestsellingpots__card-height {
+  height: 25rem;
+}
+.bestsellingpots__card-bgimage {
+  background-image: url("https://res.cloudinary.com/dchzjr4bz/image/upload/v1690968621/pot1_gkvkfb.webp ");
 }/*# sourceMappingURL=bestsellingpots.css.map */
