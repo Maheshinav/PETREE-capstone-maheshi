@@ -3,25 +3,25 @@
 
 .nav{
     &__logo{
-        height: 100px;
+        height: 80px;
         width: auto;
     padding: 0;
     }
     &__navbar{
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
     &__search-icon{
         height: 100%;
         border: 1px solid $olive-green;
         border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right-color:transparent;
+    border-right-color:transparent !important;
     }
     &__input{
         
         border: 1px solid $olive-green;
-        border-left: transparent;
+        border-left: transparent !important;
     }
     &_input-center{
         margin-left: auto;

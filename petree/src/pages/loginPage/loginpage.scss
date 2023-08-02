@@ -24,10 +24,18 @@
     &__register{
         color: $olive-green !important; 
     }
+    &__register_link{
+        margin-bottom: 0 !important;
+    }
     &__not-member{
         color: $olive-green;
         display: flex;
+        align-items: center;
     }
+    &__not-member-text{
+        margin-bottom: 0;
+    }
+
     &__input-text{
         color:$grass-green ;
         border-color:$olive-green ;

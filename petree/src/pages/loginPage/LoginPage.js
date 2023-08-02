@@ -1,5 +1,4 @@
 import "./loginpage.css";
-import { Link } from "react-router-dom";
 import Logo from "../../assets/images/unnamed.jpg";
 import MainImage from "../../assets/images/login-image.png";
 import { FloatingLabel, Form } from "react-bootstrap";
@@ -104,11 +103,11 @@ const LoginPage = ({handleLogin}) => {
             <h6>Forgot password?</h6>
           </div>
           <div className="login__not-member">
-            <p>Not a member yet?</p>
-            <h6>
-              <Link className="login__register" to="/register">
-                Register
-              </Link>
+            <p className="login__not-member-text">Not a member yet?</p>
+            <h6 className="login__register_link">
+            <a href="/registerPage" className="login__register">
+                        Register
+                      </a>
             </h6>
           </div>
         </form>

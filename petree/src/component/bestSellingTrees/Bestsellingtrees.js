@@ -15,21 +15,17 @@ const Featuredtrees = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="row">
-              <div className="col-6">
+              <div className="col-sm-12 col-md-6">
                 <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
                   <img src={Appletree} class="card-img-top carousel__image" alt="dwarf-apple-tree" />
                   <div class="card-body">
-                   
                     <h5 class="carousel__card-title">Dwarf Apple Tree</h5>
                     <p class="carousel__card-price">$17.00</p>
                     <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
-                    
-                    
-                    
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-sm-12 col-md-6">
                 <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
                   <img src={Appletree} class="card-img-top carousel__image" alt="dwarf-apple-tree" />
                   <div class="card-body">
@@ -45,9 +41,9 @@ const Featuredtrees = () => {
           {/* Add more carousel items here */}
           <div className="carousel-item">
             <div className="row">
-              <div className="col-6">
-                <div class="card container d-flex justify-content-center" style={{ width: '18rem' }}>
-                  <img src={Bananatree} class="card-img-top images" alt="..." />
+              <div className="col-sm-12 col-md-6">
+                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
+                  <img src={Bananatree} class="card-img-top carousel__image" alt="dwarf-banana-tree" />
                   <div class="card-body">
                     <h5 class="carousel__card-title">Dwarf Banana Tree</h5>
                     <p class="carousel__card-price">$17.00</p>
@@ -55,8 +51,8 @@ const Featuredtrees = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
-                <div class="card container d-flex justify-content-center" style={{ width: '18rem' }}>
+              <div className="col-sm-12 col-md-6">
+                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
                   <img src={Lemontree} class="card-img-top carousel__image" alt="dwarf-lemon-tree" />
                   <div class="card-body">
                     <h5 class="carousel__card-title">Dwarf Lemon Tree</h5>
@@ -81,9 +77,6 @@ const Featuredtrees = () => {
       <div>
         <div style={{ position: 'relative', overflow: "hidden" }}>
           <img  className="hero w=100" style={{ width: '100%' }} src={Secondimage} alt="Hero" />
-          <div >
-            </div>
-          
         </div>
       </div>
     </div>

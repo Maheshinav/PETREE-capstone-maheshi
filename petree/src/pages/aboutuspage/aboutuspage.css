@@ -1,0 +1,70 @@
+@import "~mdb-react-ui-kit/dist/css/mdb.min.css";
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Thin.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Medium.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-SemiBold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Bold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Black.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  padding: 2rem;
+  color: #3E5700;
+  font-size: 2rem;
+}
+
+.page-subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  padding: 2rem;
+  color: #7E9D25;
+  font-size: 1.5rem;
+}
+
+.page-text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #192800;
+}
+
+.about-us-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=aboutuspage.css.map */

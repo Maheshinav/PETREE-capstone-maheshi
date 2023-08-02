@@ -13,7 +13,7 @@ const Homepage = () => {
         <div style={{ overflow: "hidden" }}>
           <img className="hero w=100" src={Heroimage} alt="Hero" />
           <div>
-            {/*<h1 class="custom-text">Responsive left-aligned hero with image</h1>*/}
+            {/*<h1 className="custom-text">Responsive left-aligned hero with image</h1>*/}
           </div>
         </div>
       </div>
