@@ -1,0 +1,29 @@
+@use '../../styles/partials//breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+
+.tree{
+    &__image{
+        height: 20rem;
+
+        @include media-tablet{
+            height: 13rem;
+        }
+        @include media-desktop{
+            height: 15rem;
+        }
+    }
+    &__button{
+        background-color: $olive-green;
+    }
+    &__card{
+        height: 3rem;
+    }
+    &__heading{
+        font-weight: 700 !important;
+        font-size: 3rem;
+        color: $olive-green;
+    }
+    &__heading-set{
+        margin-top: 1rem;
+    }
+}

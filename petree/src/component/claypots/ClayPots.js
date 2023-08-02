@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './bestsellingpots.css';
+import './clayPots.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
-const Bestsellingpots = () => {
+const ClayPots = () => {
   const [claypotData, setClaypotData] = useState([]);
 
   useEffect(() => {
@@ -33,21 +33,23 @@ const Bestsellingpots = () => {
 
   return (
     <div>
-      <div className='bestsellingpots__heading-set d-flex justify-content-center'>
-        <h1 className='bestsellingpots__heading'>Clay Pots</h1>
+      <div className='claypot__heading-set d-flex justify-content-center'>
+        <h1 className='claypot__heading'>Clay Pots</h1>
         </div> 
       {groupedTreesData.map((group, index) => (
-        <div className="card-deck d-flex justify-content-around py-3 flex-wrap " key={index}>
+        <div className="card-deck d-flex justify-content-around py-3 flex-wrap" key={index}>
           {group.map((claypot) => (
-            <div className="bestsellingpots__card-height card col-11 col-md-3 mb-3 bestsellingpots__card-bgimage" key={claypot.claypot_id}>
+            <div className="card col-11 col-md-3 mb-3" key={claypot.claypot_id}>
               <img
-                className="card-img-top bestsellingpots__image"
+                className="card-img-top clatpot__image"
                 src={claypot.claypot_image}
                 alt="Card cap"
               />
               <div className="card-body">
-                <h5 className="card-title bestsellingpots__card">{claypot.claypot_name}</h5>
-                
+                <h5 className="card-title claypot__card">{claypot.claypot_name}</h5>
+                <button type="button" className="btn btn-primary claypot__button">
+                  Select now
+                </button>
               </div>
             </div>
           ))}
@@ -57,4 +59,4 @@ const Bestsellingpots = () => {
   );
 };
 
-export default Bestsellingpots;
+export default ClayPots;

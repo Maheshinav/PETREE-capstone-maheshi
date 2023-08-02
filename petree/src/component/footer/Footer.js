@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -14,18 +15,18 @@ const Footer = () => {
                     <div className="row footer__mobile">
                         <div className="col-6 col-md-2 mb-3 ">
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2 footer__text">About Us</li>
-                                <li className="nav-item mb-2 footer__text">Contact Us</li>
-                                <li className="nav-item mb-2 footer__text">Trees & Pots</li>
-                                <li className="nav-item mb-2 footer__text">Subscription Plans </li>
-                                <li className="nav-item mb-2 footer__text">Privacy Policy</li>
+                                <Link className="nav-item mb-2 footer__text">About Us</Link>
+                                <Link className="nav-item mb-2 footer__text">Contact Us</Link>
+                                <Link className="nav-item mb-2 footer__text">Trees & Pots</Link>
+                                <Link className="nav-item mb-2 footer__text">Subscription Plans </Link>
+                                <Link className="nav-item mb-2 footer__text">Privacy Policy</Link>
                             </ul>
 
 
                             <div className="footer__social-icons">
-                                <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#twitter" /></svg></a></li>
-                                <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#instagram" /></svg></a></li>
-                                <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#facebook" /></svg></a></li>
+                                <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#twitter" /></svg></a></Link>
+                                <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#instagram" /></svg></a></Link>
+                                <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="16" height="16"><use href="#facebook" /></svg></a></Link>
                             </div>
                             <div className=" footer__copyright-alignment">
                                 <p className="footer__copyright-text">&copy; 2023 Petree. All rights reserved.</p>
@@ -60,17 +61,17 @@ const Footer = () => {
             </div>
             <footer className="hide-mobile second-footer   footer__background-color">
                 <ul className="nav footer__items-alignment  pb-3 mb-3 footer__items-justify-tab">
-                    <li className="nav-item mb-2 footer__text-tab">About Us</li>
-                    <li className="nav-item mb-2 footer__text-tab">Contact Us</li>
-                    <li className="nav-item mb-2 footer__text-tab">Trees & Pots</li>
-                    <li className="nav-item mb-2 footer__text-tab">Subscription Plans </li>
-                    <li className="nav-item mb-2 footer__text-tab">Privacy Policy</li>
+                    <Link className="nav-item mb-2 footer__text-tab">About Us</Link>
+                    <Link className="nav-item mb-2 footer__text-tab">Contact Us</Link>
+                    <Link className="nav-item mb-2 footer__text-tab">Trees & Pots</Link>
+                    <Link className="nav-item mb-2 footer__text-tab">Subscription Plans </Link>
+                    <Link className="nav-item mb-2 footer__text-tab">Privacy Policy</Link>
                 </ul>
                 <div className="footer__social-icons-wrap">
                     <div className="footer__social-icons-tab">
-                        <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#twitter" /></svg></a></li>
-                        <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#instagram" /></svg></a></li>
-                        <li className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#facebook" /></svg></a></li>
+                        <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#twitter" /></svg></a></Link>
+                        <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#instagram" /></svg></a></Link>
+                        <Link className="footer__list-display"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use href="#facebook" /></svg></a></Link>
                     </div>
                 </div>
 

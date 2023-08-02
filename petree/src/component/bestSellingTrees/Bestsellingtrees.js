@@ -1,82 +1,77 @@
 import "./bestsellingtrees.css";
-import Appletree from "../../assets/images/dwarf apple.jpeg";
-import Bananatree from "../../assets/images/dwarf banana tree.jpg";
-import Lemontree from "../../assets/images/dwarf lemon tree.jpeg";
 import Ratings from "../../assets/icons/🦆 icon _star.svg";
-import Secondimage from "../../assets/images/Landing page 2.jpg";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Featuredtrees = () => {
+  const [treesData, setTreesData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from http://localhost:8080/trees when the component mounts
+    axios.get('http://localhost:8080/trees')
+      .then(response => {
+        console.log('Fetched data:', response.data); 
+        setTreesData(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
   return (
+    
     <div>
-      <div>
-        <h1 className="page-title">Best Selling Trees!</h1>
-      </div>
+      
+      <div className='bestsellingtrees__heading-set d-flex justify-content-center'>
+        <h1 className='bestsellingtrees__heading'>Best Selling Trees!</h1>
+        </div> 
+      
       <div id="myCarousel" className="carousel slide mb-6 carousel__padding" data-bs-ride="carousel">
         <div className="carousel-inner">
-          <div className="carousel-item active">
+        {treesData.map((tree, index) => (
+          <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
             <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
-                  <img src={Appletree} class="card-img-top carousel__image" alt="dwarf-apple-tree" />
-                  <div class="card-body">
-                    <h5 class="carousel__card-title">Dwarf Apple Tree</h5>
-                    <p class="carousel__card-price">$17.00</p>
+              <div className="col-6">
+                <div className="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
+                  <img src={tree.tree_image} className="card-img-top carousel__image" alt={tree.tree_name} />
+                  <div className="card-body">
+                    <h5 className="carousel__card-title">{tree.tree_name}</h5>
+                    <p className="carousel__card-price">{typeof tree.tree_price === 'number' ? `$${tree.tree_price.toFixed(2)}` : ''}</p>
                     <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
-                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
-                  <img src={Appletree} class="card-img-top carousel__image" alt="dwarf-apple-tree" />
-                  <div class="card-body">
-                    <h5 class="carousel__card-title">Dwarf Apple Tree</h5>
-                    <p class="carousel__card-price">$17.00</p>
-                    <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
+              {treesData[index + 1] && (
+                <div className="col-6">
+                  <div className="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
+                    <img src={treesData[index + 1].tree_image} className="card-img-top carousel__image" alt={treesData[index + 1].tree_name} />
+                    <div className="card-body">
+                      <h5 className="carousel__card-title">{treesData[index + 1].tree_name}</h5>
+                      <p className="carousel__card-price">{typeof tree.tree_price === 'number' ? `$${tree.tree_price.toFixed(2)}` : ''}</p>
+                      <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
-
-          {/* Add more carousel items here */}
-          <div className="carousel-item">
-            <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
-                  <img src={Bananatree} class="card-img-top carousel__image" alt="dwarf-banana-tree" />
-                  <div class="card-body">
-                    <h5 class="carousel__card-title">Dwarf Banana Tree</h5>
-                    <p class="carousel__card-price">$17.00</p>
-                    <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6">
-                <div class="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
-                  <img src={Lemontree} class="card-img-top carousel__image" alt="dwarf-lemon-tree" />
-                  <div class="card-body">
-                    <h5 class="carousel__card-title">Dwarf Lemon Tree</h5>
-                    <p class="carousel__card-price">$17.00</p>
-                    <img className="carousel__ratings" src={Ratings} alt="ratings-icon" />
-                  </div>
-                </div>
-              </div>
-            </div>
+        ))}
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon carousel__slide-buttons" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon carousel__slide-buttons" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next " type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon carousel__slide-buttons" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button className="carousel-control-next " type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span className="carousel-control-next-icon carousel__slide-buttons" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
 
-      <div>
-        <div style={{ position: 'relative', overflow: "hidden" }}>
-          <img  className="hero w=100" style={{ width: '100%' }} src={Secondimage} alt="Hero" />
+      <div className="has-bg-img">
+        <div className="bg-img bg-cover bestsellingtrees__bgimage" >
+          <p className="bestsellingtrees__quote">With Petree You get your own dwarf Green Pet.</p>
+          <div  >
+            </div>
+          
         </div>
       </div>
     </div>

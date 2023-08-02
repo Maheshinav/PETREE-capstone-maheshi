@@ -1,0 +1,27 @@
+.tree__image {
+  height: 20rem;
+}
+@media (min-width: 768px) {
+  .tree__image {
+    height: 13rem;
+  }
+}
+@media (min-width: 1280px) {
+  .tree__image {
+    height: 15rem;
+  }
+}
+.tree__button {
+  background-color: #3E5700;
+}
+.tree__card {
+  height: 3rem;
+}
+.tree__heading {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  color: #3E5700;
+}
+.tree__heading-set {
+  margin-top: 1rem;
+}/*# sourceMappingURL=trees.css.map */

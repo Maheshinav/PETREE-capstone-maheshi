@@ -51,6 +51,12 @@
   font-size: 1rem;
   color: #192800;
 }
+.contact__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .page-title {
   font-family: "Noto Sans", sans-serif;
