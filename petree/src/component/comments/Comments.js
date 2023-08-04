@@ -4,7 +4,7 @@ import './comments.css';
 const Comments = () => {
     return (
         <div>
-            <hr class="hr divider hr-blurry" />
+            <hr className="hr divider hr-blurry" />
             <div className="container mt-5">
                 <div>
                     <h1 className="page-title">

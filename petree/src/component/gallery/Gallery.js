@@ -49,13 +49,13 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <label class="form-label" for="customFile">Add Your Petree Moments</label>
-<input type="file" class="form-control" id="customFile" />
-        
+        <label className="form-label" for="customFile">Add Your Petree Moments</label>
+        <input type="file" className="form-control" id="customFile" />
+
         <div className="gallery__add-flex mt-2">
-        <button type="button" class="btn btn-outline-success">
-   <img src={Add} alt="plus-icon" /> Add
-</button>
+          <button type="button" className="btn btn-outline-success">
+            <img src={Add} alt="plus-icon" /> Add
+          </button>
         </div>
       </div>
     </div>

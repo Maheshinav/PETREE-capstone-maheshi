@@ -34,7 +34,7 @@ const Nav = ({ handleLogout, user_id, user_name }) => {
         } catch (error) {
           console.error("Error fetching user data:", error);
         } finally {
-          setIsLoading(false); // Stop showing the loading indicator
+          setIsLoading(false); 
         }
       } else {
         setIsLoading(false);
@@ -44,7 +44,7 @@ const Nav = ({ handleLogout, user_id, user_name }) => {
     getUser();
   }, [user_id]);
 
-  // Show a loading indicator while waiting for the data
+  
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -93,7 +93,7 @@ const Nav = ({ handleLogout, user_id, user_name }) => {
                 <ul className="navbar-nav nav__list ">
                   {user_id ? (
                     <>
-                      {/* Show user-specific elements if token exists */}
+                      
                       <li className="nav-item nav__item-list">
                         <div>
                         <img
@@ -145,11 +145,11 @@ const Nav = ({ handleLogout, user_id, user_name }) => {
         </div>
                         
                       </li>
-                      {/* You can add more authenticated user-specific elements here */}
+                      
                     
                     </>
                   ) : (
-                    // Show default elements if token does not exist
+                  
                     <li className="nav-item nav__item-list">
                       <img
                         className="nav__avatar"

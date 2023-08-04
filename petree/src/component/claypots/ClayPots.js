@@ -8,7 +8,7 @@ const ClayPots = () => {
   const [claypotData, setClaypotData] = useState([]);
 
   useEffect(() => {
-    // Function to fetch data from the /trees endpoint
+
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:8080/claypots');
@@ -21,7 +21,7 @@ const ClayPots = () => {
     fetchData();
   }, []);
 
-  // Function to group the treesData into chunks of 3
+
   const chunkTreesData = (data, size) => {
     const result = [];
     for (let i = 0; i < data.length; i += size) {
@@ -36,7 +36,7 @@ const ClayPots = () => {
     <div>
       <div className='claypot__heading-set d-flex justify-content-center'>
         <h1 className='claypot__heading'>Clay Pots</h1>
-        </div> 
+      </div>
       {groupedTreesData.map((group, index) => (
         <div className="card-deck d-flex justify-content-around py-3 flex-wrap" key={index}>
           {group.map((claypot) => (

@@ -1,13 +1,13 @@
-import Trees from '../../component/trees/Trees'
-import ClayPots from '../../component/claypots/ClayPots'
+import Trees from "../../component/trees/Trees";
+import ClayPots from "../../component/claypots/ClayPots";
 
 const ProductsPage = () => {
-    return ( 
-        <div>
-            <Trees/>
-            <ClayPots/>
-        </div>
-     );
-}
- 
+	return (
+		<div>
+			<Trees />
+			<ClayPots />
+		</div>
+	);
+};
+
 export default ProductsPage;

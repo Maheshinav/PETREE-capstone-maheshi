@@ -8,7 +8,7 @@ const Trees = () => {
   const [treesData, setTreesData] = useState([]);
 
   useEffect(() => {
-    // Function to fetch data from the /trees endpoint
+    
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:8080/trees");
@@ -21,7 +21,7 @@ const Trees = () => {
     fetchData();
   }, []);
 
-  // Function to group the treesData into chunks of 3
+  
   const chunkTreesData = (data, size) => {
     const result = [];
     for (let i = 0; i < data.length; i += size) {
