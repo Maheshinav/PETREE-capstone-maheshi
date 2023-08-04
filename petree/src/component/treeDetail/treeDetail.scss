@@ -1,0 +1,11 @@
+@use '../../styles/partials/colors' as *;
+
+.treedetail {
+    &__main {
+        background-color: $white;
+    }
+    &__button {
+        background-color: $olive-green;
+    }
+   
+}

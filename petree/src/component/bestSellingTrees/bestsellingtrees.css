@@ -46,6 +46,7 @@
 }
 .carousel__image {
   padding-top: 1rem;
+  height: 20rem;
 }
 .carousel__card-title {
   font-family: "Noto Sans", sans-serif;
@@ -134,4 +135,14 @@
 }
 .bestsellingtrees__heading-set {
   margin-top: 1rem;
+}
+.bestsellingtrees__card-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bestsellingtrees__card-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=bestsellingtrees.css.map */

@@ -33,7 +33,6 @@ const Gallery = () => {
               className="w-100 shadow-1-strong rounded mb-4"
               alt="woman indoor planting"
             />
-            <h1>Happy Pet tree owners</h1>
           </div>
           <div className="col-12 col-md-6">
             <img
@@ -50,8 +49,13 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="gallery__add-flex">
-          <img src={Add} alt="plus-icon" />
+        <label class="form-label" for="customFile">Add Your Petree Moments</label>
+<input type="file" class="form-control" id="customFile" />
+        
+        <div className="gallery__add-flex mt-2">
+        <button type="button" class="btn btn-outline-success">
+   <img src={Add} alt="plus-icon" /> Add
+</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './trees.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import "./trees.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Trees = () => {
   const [treesData, setTreesData] = useState([]);
@@ -10,10 +11,10 @@ const Trees = () => {
     // Function to fetch data from the /trees endpoint
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/trees');
+        const response = await axios.get("http://localhost:8080/trees");
         setTreesData(response.data);
       } catch (error) {
-        console.error('Error fetching tree data:', error);
+        console.error("Error fetching tree data:", error);
       }
     };
 
@@ -32,13 +33,15 @@ const Trees = () => {
   const groupedTreesData = chunkTreesData(treesData, 3);
 
   return (
-
     <div>
-       <div className='tree__heading-set d-flex justify-content-center'>
-        <h1 className='tree__heading'>Tree Pets</h1>
-        </div> 
+      <div className="tree__heading-set d-flex justify-content-center">
+        <h1 className="tree__heading">Tree Pets</h1>
+      </div>
       {groupedTreesData.map((group, index) => (
-        <div className="card-deck d-flex justify-content-around py-3 flex-wrap" key={index}>
+        <div
+          className="card-deck d-flex justify-content-around py-3 flex-wrap"
+          key={index}
+        >
           {group.map((tree) => (
             <div className="card col-11 col-md-3 mb-3" key={tree.tree_id}>
               <img
@@ -48,9 +51,13 @@ const Trees = () => {
               />
               <div className="card-body">
                 <h5 className="card-title tree__card">{tree.tree_name}</h5>
-                <button type="button" className="btn btn-primary tree__button">
+
+                <Link
+                  to={`/singleproductpage/${tree.tree_id}`}
+                  className="btn btn-primary tree__button"
+                >
                   Pet now
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -61,3 +68,4 @@ const Trees = () => {
 };
 
 export default Trees;
+

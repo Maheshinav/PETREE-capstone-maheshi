@@ -39,7 +39,7 @@ const Bestsellingpots = () => {
       {groupedTreesData.map((group, index) => (
         <div className="card-deck d-flex justify-content-around py-3 flex-wrap " key={index}>
           {group.map((claypot) => (
-            <div className="bestsellingpots__card-height card col-11 col-md-3 mb-3 bestsellingpots__card-bgimage" key={claypot.claypot_id}>
+            <div className="bestsellingpots__card-height card col-11 col-md-3 mb-3 " key={claypot.claypot_id}>
               <img
                 className="card-img-top bestsellingpots__image"
                 src={claypot.claypot_image}

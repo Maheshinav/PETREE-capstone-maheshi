@@ -1,1 +1,76 @@
-/*# sourceMappingURL=singleproductpage.css.map */
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Thin.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Medium.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-SemiBold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Bold.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+@font-face {
+  src: url("../../assets/fonts/NotoSans-Black.ttf");
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+.item__name {
+  text-align: center !important;
+}
+.item__button-text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #E1EDC2 !important;
+  font-size: 0.25rem;
+  text-transform: lowercase;
+}
+.item__button-color {
+  background-color: #7E9D25 !important;
+}
+.item__card-sub {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #192800 !important;
+  font-size: 1rem;
+}
+.item__item__card-reg {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #192800 !important;
+  font-size: 0.7rem;
+}
+
+.custom-card-overlay h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.page-title {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  padding: 2rem;
+  color: #3E5700;
+  font-size: 2rem;
+}/*# sourceMappingURL=singleproductpage.css.map */

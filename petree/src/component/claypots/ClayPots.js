@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './clayPots.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const ClayPots = () => {
   const [claypotData, setClaypotData] = useState([]);
@@ -47,9 +48,12 @@ const ClayPots = () => {
               />
               <div className="card-body">
                 <h5 className="card-title claypot__card">{claypot.claypot_name}</h5>
-                <button type="button" className="btn btn-primary claypot__button">
-                  Select now
-                </button>
+                <Link
+                  to={`/claypotDetailpage/${claypot.claypot_id}`}
+                  className="btn btn-primary tree__button"
+                >
+                  Select Now
+                </Link>
               </div>
             </div>
           ))}

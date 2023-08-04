@@ -29,8 +29,8 @@ const Featuredtrees = () => {
         <div className="carousel-inner">
         {treesData.map((tree, index) => (
           <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-            <div className="row">
-              <div className="col-6">
+            <div className="bestsellingtrees__card-flex">
+              <div className="col-md-6 col-12 mb-3">
                 <div className="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
                   <img src={tree.tree_image} className="card-img-top carousel__image" alt={tree.tree_name} />
                   <div className="card-body">
@@ -41,7 +41,7 @@ const Featuredtrees = () => {
                 </div>
               </div>
               {treesData[index + 1] && (
-                <div className="col-6">
+                <div className="col-md-6 col-12 mb-3">
                   <div className="card container d-flex justify-content-center carousel__card-border" style={{ width: '18rem' }}>
                     <img src={treesData[index + 1].tree_image} className="card-img-top carousel__image" alt={treesData[index + 1].tree_name} />
                     <div className="card-body">

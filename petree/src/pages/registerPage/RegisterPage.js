@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./registerPage.css";
-import { Link } from "react-router-dom";
-import Logo from "../../assets/images/unnamed.jpg";
 import MainImage from "../../assets/images/register.png";
 import { FloatingLabel, Form } from 'react-bootstrap';
 
@@ -53,12 +51,14 @@ const RegisterPage = () => {
     // Redirect to the login page after successful registration
     window.location.href = '/login';
   }
+
+  const Logo="https://res.cloudinary.com/dchzjr4bz/image/upload/v1691044702/unnamed_2_uowdpc.jpg";
   return (
     <div>
       <div className="container-fluid d-flex justify-content-center align-items-center">
-        <Link className="navbar-brand" to="/">
+      <a className="navbar-brand" href="/">
           <img className="nav__logo" src={Logo} alt="Your Logo" />
-        </Link>
+        </a>
       </div>
       <div className="container-fluid d-flex justify-content-center align-items-center">
         <img className="register__image" src={MainImage} alt="register_image" />

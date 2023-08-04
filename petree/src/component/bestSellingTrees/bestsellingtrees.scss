@@ -4,106 +4,129 @@
 @import "~mdb-react-ui-kit/dist/css/mdb.min.css";
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
+
 .carousel {
-	&__padding {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		height: auto;
-	}
+    &__padding {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: auto;
 
-	&__image {
-		padding-top: 1rem;
-	}
+    }
 
-	// &__slide-buttons{
 
-	//
+    &__image {
+        padding-top: 1rem;
+        height: 20rem;
+    }
 
-	&__card-title {
-		@include fontBold;
-		font-size: 1.1rem;
-		color: $deep-green;
-	}
+    // &__slide-buttons{
 
-	&__card-price {
-		@include fontBold;
-		font-size: 0.9rem;
-		color: $deep-green;
-	}
+    //
 
-	&__card-border {
-		border: 1px solid $white;
-		width: 18rem;
-	}
+    &__card-title {
+        @include fontBold;
+        font-size: 1.1rem;
+        color: $deep-green;
+    }
+
+    &__card-price {
+        @include fontBold;
+        font-size: 0.9rem;
+        color: $deep-green;
+    }
+
+    &__card-border {
+        border: 1px solid $white;
+        width: 18rem;
+    }
 }
 
 .page-title {
-	@include fontBold;
-	padding: 2rem;
-	color: $olive-green;
-	font-size: 2rem;
+    @include fontBold;
+    padding: 2rem;
+    color: $olive-green;
+    font-size: 2rem;
 }
 
 .card-body {
-	text-align: center;
+    text-align: center;
 }
 
 .bestsellingtrees {
-	&__overlap {
-		position: "absolute" !important;
-		top: "50%" !important;
-		left: "50%" !important;
-		transform: "translate(-50%, -50%)" !important;
-		color: "#fff" !important;
-		z-index: 2 !important;
-		text-align: "center";
-	}
+
+    &__overlap {
+        position: 'absolute' !important;
+        top: '50%' !important;
+        left: '50%' !important;
+        transform: 'translate(-50%, -50%)' !important;
+        color: '#fff' !important;
+        z-index: 2 !important;
+        text-align: 'center';
+    }
+
 }
 
 .bestsellingtrees {
-	&__bgimage {
-		background-image: url("https://res.cloudinary.com/dchzjr4bz/image/upload/v1690964318/My_project_ivs8ho.jpg");
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		padding-left: 1rem;
-		color: $pale-green;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		width: 100%;
-		height: 300px;
-		@include media-tablet {
-			height: 400px !important;
-		}
-		@include media-desktop {
-			height: 500px !important;
-		}
-	}
-	&__quote {
-		width: 40%;
-		font-weight: 900;
-		font-size: 1.8rem;
-		background-color: $text-overlay;
-		text-align: center;
-		border-radius: 4px;
-		@include media-desktop {
-			font-size: 2.4rem;
-		}
-		@include media-tablet {
-			padding: 0.4rem;
-		}
-	}
-	&__heading {
-		font-weight: 700 !important;
-		font-size: 3rem;
-		color: $olive-green;
-	}
-	&__heading-set {
-		margin-top: 1rem;
-	}
+    &__bgimage {
+        background-image: url('https://res.cloudinary.com/dchzjr4bz/image/upload/v1690964318/My_project_ivs8ho.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        color: $pale-green ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 300px;
+
+        @include media-tablet {
+            height: 400px !important;
+        }
+
+        @include media-desktop {
+            height: 500px !important;
+        }
+    }
+
+    &__quote {
+        width: 40%;
+        font-weight: 900;
+        font-size: 1.8rem;
+        background-color: $text-overlay;
+        text-align: center;
+        border-radius: 4px;
+
+        @include media-desktop {
+
+            font-size: 2.4rem;
+        }
+
+        @include media-tablet {
+            padding: 0.4rem;
+        }
+    }
+
+    &__heading {
+        font-weight: 700 !important;
+        font-size: 3rem;
+        color: $olive-green;
+    }
+
+    &__heading-set {
+        margin-top: 1rem;
+    }
+
+    &__card-flex {
+        display: flex !important;
+        flex-direction: column;
+        @include media-tablet{
+            flex-direction: row;
+            justify-content:space-evenly;
+        }
+    }
 }

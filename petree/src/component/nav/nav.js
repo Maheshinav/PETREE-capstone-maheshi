@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../../assets/images/unnamed.jpg";
 import "font-awesome/css/font-awesome.min.css";
 import { Link } from "react-router-dom";
 import "./nav.css";
@@ -21,9 +20,10 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 
-const Nav = ({ handleLogout, user_id }) => {
-  const [user, setUser] = useState(null);
+const Nav = ({ handleLogout, user_id, user_name }) => {
+  const [setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const Logo="https://res.cloudinary.com/dchzjr4bz/image/upload/v1691044702/unnamed_2_uowdpc.jpg";
 
   useEffect(() => {
     const getUser = async () => {
@@ -101,7 +101,7 @@ const Nav = ({ handleLogout, user_id }) => {
                           src={ProPic}
                           alt="Profile Pic"
                         />
-                        <span className="nav__menu-item">{user && user.name}</span>
+                        <span className="nav__menu-item">{user_name}</span>
                         </div>
                         <div>
                         <div className="nav-item dropdown">

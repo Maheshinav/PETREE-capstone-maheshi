@@ -1,5 +1,4 @@
 import "./loginpage.css";
-import Logo from "../../assets/images/unnamed.jpg";
 import MainImage from "../../assets/images/login-image.png";
 import { FloatingLabel, Form } from "react-bootstrap";
 import React, { useState } from "react";
@@ -30,7 +29,7 @@ const LoginPage = ({handleLogin}) => {
       console.log("Result from authenticateUser:", authData);
   
       if (authData) {
-        const { token, userId } = authData;
+        const { token, userId, username } = authData;
         console.log("User ID received after login:", userId);
         
         handleLogin(token, userId);
@@ -38,6 +37,7 @@ const LoginPage = ({handleLogin}) => {
         
         localStorage.setItem("token", token);
         localStorage.setItem("user_id", userId); 
+        localStorage.setItem("user_name", username); 
         
         
         window.location.href = '/';
@@ -49,6 +49,7 @@ const LoginPage = ({handleLogin}) => {
       alert("An error occurred during login. Please try again.");
     }
   };
+  const Logo="https://res.cloudinary.com/dchzjr4bz/image/upload/v1691044702/unnamed_2_uowdpc.jpg";
   
   return (
     <div>

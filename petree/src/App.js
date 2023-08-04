@@ -13,16 +13,19 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import SubscriptionPage from "./pages/subscriptionPage/Subscriptionpage";
 import RegisterPage from "./pages/registerPage/RegisterPage";
 import ProductsPage from "./pages/productspage/ProductsPage";
-import AboutUsPage from "./pages/aboutuspage/Aboutuspage";
-import ContactPage from "./pages/contactuspage/Contactuspage";
+import SingleproductPage from "./pages/singleProductPage/Singleproductpage";
+import Aboutuspage from "./pages/aboutuspage/Aboutuspage";
+import Contactuspage from "./pages/contactuspage/Contactuspage";
+import ClaypotDetailPage from "./pages/claypotdetailpage/ClaypotDetailPage"
 
 function App() {
-  // State to store the token and user_id
+  // State to store the token and user_idClaypotDetailPage
   const [authData, setAuthData] = useState({
     token: localStorage.getItem("token") || "",
     user_id: null,
   });
   let userId = localStorage.getItem("user_id");
+  let username = localStorage.getItem("user_name");
   // Function to handle login and set the token and user_id
 
   // Function to handle logout and clear the token and user_id
@@ -30,14 +33,16 @@ function App() {
     setAuthData({ token: "", user_id: null });
     localStorage.removeItem("token");
     localStorage.removeItem("user_id");
+    localStorage.removeItem("user_name");
   };
 
-  const handleLogin = (token, user_id) => {
+  const handleLogin = (token, user_id, user_name) => {
     console.log("Logging in with user_id:", user_id);
     setAuthData({ token, user_id });
     localStorage.setItem("token", token);
-    localStorage.setItem("user_id", user_id); // save user_id to localStorage
-    console.log("Current user_id after login:", authData.user_id);
+    localStorage.setItem("user_id", user_id);
+    localStorage.setItem("user_name", user_name);
+    console.log("Current user_id after login:", authData.user_id, authData.user_name);
   };
 
   useEffect(() => {
@@ -80,7 +85,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        {showNav && (<Nav token={authData.token} handleLogout={handleLogout} user_id={userId}/>)}
+        {showNav && (<Nav token={authData.token} handleLogout={handleLogout} user_id={userId} user_name={username}/>)}
 
         {/* Pass the user_id prop to the Nav component */}
         <Routes>
@@ -90,8 +95,10 @@ function App() {
          <Route path="/subscriptionPage" element={<SubscriptionPage />} /> 
          <Route path="/registerPage" element={<RegisterPage/>}/>
          <Route path="/productsPage" element={<ProductsPage/>}/>
-         <Route path="/AboutusPage" element={<AboutUsPage/>}/>
-         <Route path="/ContactusPage" element={<ContactPage/>}/>
+         <Route path="/singleproductpage/:tree_id" element={<SingleproductPage/>}/>
+         <Route path="/claypotdetailpage/:claypot_id" element={<ClaypotDetailPage/>}/>
+         <Route path="/aboutuspage" element={<Aboutuspage/>}/>
+         <Route path="/contactuspage" element={<Contactuspage/>}/>
         </Routes>
         
         {showNav && <Footer />}

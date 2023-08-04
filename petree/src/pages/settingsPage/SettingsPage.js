@@ -20,7 +20,8 @@ const SettingsPage = () => {
         const response = await axios.get(
           `http://localhost:8080/petree/${user_id}`
         );
-        setUserData(response.data); // Set the fetched user data to state
+        setUserData(response.data); 
+        setUpdatedUser(response.data);// Set the fetched user data to state
         console.log("User data fetched successfully:", response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -69,7 +70,7 @@ const SettingsPage = () => {
       <div className="container-fluid col-xl-8 settings__main">
         <div className="container-fluid d-flex justify-content-start align-items-center ">
           <img className="settings__propic" src={ProPic} alt="ProPic" />
-          <h5 className="settings__color">Kusal</h5>
+          <h5 className="settings__color">{updatedUser.user_name}</h5>
         </div>
         <hr className="settings__divider" />
         <div className="container-fluid">
@@ -88,7 +89,7 @@ const SettingsPage = () => {
                 id="exampleFormControlInput1"
                 placeholder=""
                 name="first_name" // The name attribute should match the property name in the user data object
-                value={userData.first_name || ""} // Set the initial value of the input field to the current value from userData or an empty string if userData is null
+                value={updatedUser.first_name || ""} // Set the initial value of the input field to the current value from userData or an empty string if userData is null
                 onChange={handleInputChange}
               />
             </div>
@@ -104,7 +105,7 @@ const SettingsPage = () => {
                 className="form-control settings__color"
                 id="exampleFormControlInput1"
                 name="last_name" // The name attribute should match the property name in the user data object
-                value={userData.last_name} // Set the initial value of the input field to the current value from userData
+                value={updatedUser.last_name} // Set the initial value of the input field to the current value from userData
                 onChange={handleInputChange}
               />
             </div>
@@ -120,7 +121,7 @@ const SettingsPage = () => {
                 className="form-control settings__color"
                 id="exampleFormControlInput1"
                 name="user_name" // The name attribute should match the property name in the user data object
-                value={userData.user_name} // Set the initial value of the input field to the current value from userData
+                value={updatedUser.user_name} // Set the initial value of the input field to the current value from userData
                 onChange={handleInputChange}
               />
             </div>
@@ -135,9 +136,8 @@ const SettingsPage = () => {
                 type="email"
                 className="form-control settings__color"
                 id="exampleFormControlInput1"
-                placeholder={userData.email}
                 name="email" // The name attribute should match the property name in the user data object
-                value={userData.email} // Set the initial value of the input field to the current value from userData
+                value={updatedUser.email} // Set the initial value of the input field to the current value from userData
                 onChange={handleInputChange}
               />
             </div>
@@ -153,7 +153,7 @@ const SettingsPage = () => {
                 className="form-control settings__color"
                 id="exampleFormControlInput1"
                 name="contact_number" // The name attribute should match the property name in the user data object
-                value={userData.contact_number} // Set the initial value of the input field to the current value from userData
+                value={updatedUser.contact_number} // Set the initial value of the input field to the current value from userData
                 onChange={handleInputChange}
               />
             </div>
@@ -169,7 +169,7 @@ const SettingsPage = () => {
                 className="form-control settings__color"
                 id="exampleFormControlInput1"
                 name="address" // The name attribute should match the property name in the user data object
-                value={userData.address} // Set the initial value of the input field to the current value from userData
+                value={updatedUser.address} // Set the initial value of the input field to the current value from userData
                 onChange={handleInputChange}
               />
             </div>

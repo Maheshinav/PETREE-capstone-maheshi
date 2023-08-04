@@ -6,11 +6,11 @@ const Comments = () => {
         <div>
             <hr class="hr divider hr-blurry" />
             <div className="container mt-5">
-               <div>
-               <h1 className="page-title">
-                    Hear From Real Petree Owners!
-                </h1>
-               </div>
+                <div>
+                    <h1 className="page-title">
+                        Hear From Real Petree Owners!
+                    </h1>
+                </div>
                 <div className="row d-flex justify-content-center">
                     <div className="col-md-8">
 
@@ -27,13 +27,14 @@ const Comments = () => {
                             </div>
                             <div className=" d-flex justify-content-between mt-2 align-items-center">
                                 <div className="reply px-4">
-                                    <small className="comments__description">Just received my tree pot from Petree, and it's fantastic! The quality is top-notch, and it looks great in my garden.</small>
-                                </div> 
-                                
+                                    <small className="comments__description">Petree is Amazing. I always wanted to grow my own fruit tree. But I couldn't do that because I am a mom with 2 kids. Have no enough time for gardening.
+                                        But Petree changed everything. Now I have my own pet tree and PETREE helps me to take care of it easily.Thanks Petree for this stress reliver</small>
+                                </div>
+
 
 
                             </div>
-                            
+
                         </div>
 
                         <div className="card comments__card-border p-3">
@@ -49,7 +50,7 @@ const Comments = () => {
                             </div>
                             <div className=" d-flex justify-content-between mt-2 align-items-center">
                                 <div className="reply px-4">
-                                    <small className="comments__description">Hmm, This poster looks cool</small>
+                                    <small className="comments__description">Just got my dwarf plum tree and the handmade clay pot. They are awesome!!</small>
                                 </div>
 
                             </div>

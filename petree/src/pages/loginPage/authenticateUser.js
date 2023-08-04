@@ -27,7 +27,7 @@ export const authenticateUser = async (email, password) => {
   
         console.log('Payload:', payload);
   
-        return { token, userId: payload.userId }; 
+        return { token, userId: payload.userId,username: payload.username }; 
   
     } catch (error) {
         console.error('Failed to authenticate:', error);

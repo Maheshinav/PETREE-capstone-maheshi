@@ -16,7 +16,7 @@
 }
 .bestsellingpots__card {
   height: 3rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .bestsellingpots__heading {
   font-weight: 700 !important;
@@ -28,7 +28,4 @@
 }
 .bestsellingpots__card-height {
   height: 25rem;
-}
-.bestsellingpots__card-bgimage {
-  background-image: url("https://res.cloudinary.com/dchzjr4bz/image/upload/v1690968621/pot1_gkvkfb.webp ");
 }/*# sourceMappingURL=bestsellingpots.css.map */
